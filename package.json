@@ -1,0 +1,27 @@
+{
+  "name": "d3-atp-stats",
+  "version": "1.0.0",
+  "description": "ATP Stats for Players using D3.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DRSantillan/d3-atp-stats.git"
+  },
+  "keywords": [
+    "d3",
+    "js",
+    "css",
+    "ajax",
+    "jquery",
+    "mongo"
+  ],
+  "author": "Dean Santillan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DRSantillan/d3-atp-stats/issues"
+  },
+  "homepage": "https://github.com/DRSantillan/d3-atp-stats#readme"
+}
