@@ -1,0 +1,394 @@
+//console.log(index,value);
+				
+				//console.log(">>>>>",data[index].stats.returndata.fsreturnpointswon);
+				
+					//var player = [];
+					//var avg = (data[index].stats.servicedata.aces / data[index].stats.servicedata.gamesplayed) * 100;
+					//player.push(data[index].rank);
+					//player.push(data[index].name);
+					//player.push(data[index].stats.servicedata.aces);
+					//player.push(data[index].stats.servicedata.gamesplayed);
+				// 	if(avg <10){
+				// 		player.push(0);
+				// 		player.push("black");
+
+				// 	}
+				// 	else if(avg > 10 && avg <20){
+				// 		player.push(10);
+				// 		player.push("#00f338");
+				// 	}
+				// 	else if(avg > 20 && avg < 30){
+				// 		player.push(20);
+				// 		player.push("#005dd5");
+				// 	}
+				// 	else if(avg > 30 && avg < 40){
+				// 		player.push(30);
+				// 		player.push("#00e9dc");
+				// 	}
+				// 	else if(avg > 40 && avg < 50){
+				// 		player.push(40);
+				// 		player.push("#e9316d");
+				// 	}
+				// 	else if(avg > 50 && avg < 60){
+				// 		player.push(50);
+				// 		player.push("#e9b113");
+				// 	}
+				// 	else if(avg > 60 && avg < 70){
+				// 		player.push(60);
+				// 		player.push("#e94c95");
+				// 	}
+				// 	else if(avg > 70 && avg < 80){
+				// 		player.push(70);
+				// 		player.push("#358783");
+				// 	}
+				// 	else if(avg > 80 && avg < 90){
+				// 		player.push(80);
+				// 		player.push("#8fa914");
+				// 	}
+				// 	else{
+				// 		player.push(90);
+				// 		player.push("#ff15f6");
+				// 	}
+				// 	//console.log(data[index].rank);
+					
+				// 	player.push(avg);
+					
+				
+				// playerData.push(player);
+
+
+				//var total = 0;
+		//for(var i = 0; i < playerData.length-1;i++){
+			//console.log(i,total);
+		//	total = total + parseInt(playerData[i][2]);
+		//	
+
+
+		//}
+
+
+console.log(">>>>>",data);
+		//console.log("tot",total);
+		//var average = total / playerData.length-1;
+		//playerData.push(average);
+		//console.log("average", average);
+		//debugger;
+		//
+		var x = function(d) { return parseInt(d[2]); }
+
+		//
+	console.log("d3.sum", d3.sum(playerData, x));
+	console.log("d3.min", d3.min(playerData, x));
+	console.log("d3.max", d3.max(playerData, x));
+	console.log("d3.extent", d3.extent(playerData, x));
+	console.log("d3.mean", d3.mean(playerData, x));
+	console.log("d3.median", d3.median(playerData, x));
+	console.log("d3.quantile", d3.quantile(playerData, x));
+	console.log("d3.variance", d3.variance(playerData, x));
+	console.log("d3.deviation", d3.deviation(playerData, x));
+	console.log(playerData);
+
+	//$("#Data").append(JSON.stringify(playerData));
+// 	 	var w = 1200;
+// 	 	var h = 800;
+// 	 	var padding = 20;
+// var xScale = d3.scaleLinear().domain([0, d3.max(data, function(d){return d;})]).range([padding, w - padding * 2]);
+// 	 	var yScale = d3.scaleLinear().domain([0, d3.max(data.sta, function(d){return d[i].stats;})]).range([h - padding * 2, padding]);
+
+// 	 	var xAxis = d3.axisBottom(xScale).ticks(40);
+// 		var yAxis = d3.axisLeft(yScale).ticks(20);
+
+// 	 	var svg = d3.selectAll("#Data").append("svg").attr("width", "1200").attr("height", "800");
+// 	 	svg.append('g').attr("transform", "translate(0," + (h - padding) + ")").call(xAxis);
+// 	 	svg.append("g").attr("class", "axis").attr("transform", "translate(" + padding + ",0)").call(yAxis);
+
+// svg.selectAll("circle")
+		// 	.data(playerData)
+		// 	.enter()
+		// 	.append("circle")
+		// 	.attr("cx", function(d){return xScale(d[2]);})
+		// 	.attr("cy", function(d){return yScale(d[4]);})
+		// 	.attr("r", function(d) {
+    					
+		// 				if(d[3] == "Akira Santillan"){
+
+		// 			return "15"; 
+		// 		}
+		// 		else {
+		// 			return Math.sqrt(d[0]); 
+		// 		}
+  //   					;})
+		// 	.attr("fill", function(d){
+		// 		if(d[3] == "Akira Santillan"){
+
+		// 			return "black"; 
+		// 		}
+		// 		else {
+		// 			return d[1]; 
+		// 		}
+		// 	});
+
+		// 	svg.selectAll("text")
+		// 	.data(playerData)
+		// 	.enter()
+		// 	.append("text")
+		// 	.text(function(d){
+		// 		if(d[3] == "Akira Santillan"){
+
+		// 			return d[3]; 
+		// 		}
+		// 		else {
+		// 			return d[2]; 
+		// 		}
+		// 	})//;
+		// 	.attr("x", function(d){return xScale(d[2]);})
+		// 	.attr("y", function(d){return yScale(d[4]);})
+		// 	.attr("font-family", "sans-serif")
+  //  			.attr("font-size", "11px")
+  //  			.attr("fill", "grey");
+
+   			//svg.append("rect").attr("width", 1200).attr("height", 40).attr("x", 0).attr("y", 550);
+
+
+
+
+
+
+barArea.selectAll("svg").append("g")
+							.data(data)
+							.enter()
+							.append("line")
+							.style("stroke", "black")  // colour the line
+    						.attr("x1", 0)     // x position of the first end of the line
+    						.attr("y1", theMean)      // y position of the first end of the line
+    						.attr("x2", chartWidth)     // x position of the second end of the line
+    						.attr("y2", theMean);    // y position of the second end of the line
+
+    						console.log("vpWidth",vpWidth);
+		console.log("vpHeight",vpHeight);
+		console.log("top",margin.top);
+		console.log("bot",margin.bottom);
+		console.log("right",margin.right);
+		console.log("left",margin.left);
+		console.log("chartWidth",chartWidth);
+		console.log("chartHeight",chartHeight);
+		console.log("data",data);
+
+		console.log("d3.mean", d3.mean(data, function(d){ return (d.stats.servicedata.aces/d.stats.servicedata.gamesplayed)*100}));
+		console.log("d3.median", d3.median(data, function(d){ return (d.stats.servicedata.aces/d.stats.servicedata.gamesplayed)*100}));
+
+
+		{
+    "_id": {
+        "$oid": "58c535febd966f6dec2d227e"
+    },
+    "id": 87,
+    "rank": "88",
+    "name": "Renzo Olivo",
+    "age": "24",
+    "tournamentsplayed": "26",
+    "url": "/en/players/renzo-olivo/o376/overview",
+    "urlbreakdown": "/en/players/renzo-olivo/o376/rankings-breakdown",
+    "urlhistory": "/en/players/renzo-olivo/o376/rankings-history",
+    "urlstats": "/en/players/renzo-olivo/o376/player-stats",
+    "country": "ARG",
+    "stats": {
+        "servicedata": {
+            "aces": "129",
+            "doublefaults": "183",
+            "fspercent": "58%",
+            "fspointswon": "67%",
+            "sspointswon": "49%",
+            "bpfaced": "306",
+            "bpsaved": "61%",
+            "gamesplayed": "408",
+            "gameswon": "71%",
+            "totalpointswon": "49%"
+        },
+        "returndata": {
+            "fsreturnpointswon": "29%",
+            "ssreturnpointswon": "49%",
+            "bpopportunities": "220",
+            "bpconverted": "39%",
+            "returngamesplayed": "408",
+            "returngameswon": "21%",
+            "returnpointswon": "37%",
+            "totalpointswon": "49%"
+        }
+    }
+}
+
+{
+    "_id": {
+        "$oid": "58c535fbc2ef166a0f16ae9a"
+    },
+    "id": 0,
+    "rank": "1",
+    "name": "Andy Murray",
+    "age": "29",
+    "tournamentsplayed": "18",
+    "url": "/en/players/andy-murray/mc10/overview",
+    "urlbreakdown": "/en/players/andy-murray/mc10/rankings-breakdown",
+    "urlhistory": "/en/players/andy-murray/mc10/rankings-history",
+    "urlstats": "/en/players/andy-murray/mc10/player-stats",
+    "country": "GBR",
+    "stats": {
+        "servicedata": {
+            "aces": "5376","gamesplayed": "9742"
+            "doublefaults": "1952","gamesplayed": "9742"
+            "fspercent": "58%",
+            "fspointswon": "75%",
+            "sspointswon": "52%",
+            "bpfaced": "4663","bpsaved": "63%",
+            
+            "gamesplayed": "9742",
+            "gameswon": "82%","gamesplayed": "9742",
+            "totalpointswon": "53%"
+        },
+        "returndata": {
+            "fsreturnpointswon": "34%",
+            "ssreturnpointswon": "55%",
+            "bpconverted": "44%",
+            "returngameswon": "32%",
+            "returnpointswon": "42%",
+            "totalpointswon": "53%"
+        }
+    }
+}
+{
+    "_id": {
+        "$oid": "58c53602bd966f6dec2d22c1"
+    },
+    "id": 190,
+    "rank": "191",
+    "name": "Akira Santillan",
+    "age": "19",
+    "tournamentsplayed": "34",
+    "url": "/en/players/akira-santillan/sq80/overview",
+    "urlbreakdown": "/en/players/akira-santillan/sq80/rankings-breakdown",
+    "urlhistory": "/en/players/akira-santillan/sq80/rankings-history",
+    "urlstats": "/en/players/akira-santillan/sq80/player-stats",
+    "country": "JPN",
+    "stats": {
+        "servicedata": {
+            "aces": "18",
+            "doublefaults": "11",
+            "fspercent": "50%",
+            "fspointswon": "67%",
+            "sspointswon": "53%",
+            "bpfaced": "20",
+            "bpsaved": "45%",
+            "gamesplayed": "38",
+            "gameswon": "71%",
+            "totalpointswon": "43%"
+        },
+        "returndata": {
+            "fsreturnpointswon": "16%",
+            "ssreturnpointswon": "40%",
+            "bpopportunities": "11",
+            "bpconverted": "9%",
+            "returngamesplayed": "38",
+            "returngameswon": "3%",
+            "returnpointswon": "26%",
+            "totalpointswon": "43%"
+        }
+    }
+}
+//let dataMin = d3.min(data, function(d){ return parseInt((d.stats.servicedata.doublefaults/d.stats.servicedata.gamesplayed)*100);});
+		//let dataMax = d3.max(data, function(d){ return parseInt((d.stats.servicedata.doublefaults/d.stats.servicedata.gamesplayed)*100);});
+		//let dataExtent = d3.extent(data, function(d){ return parseInt((d.stats.servicedata.doublefaults/d.stats.servicedata.gamesplayed)*100);});
+		//let dataSum = d3.sum(data, function(d){ return parseInt((d.stats.servicedata.doublefaults/d.stats.servicedata.gamesplayed)*100);});
+//let dataMedian = d3.median(data, function(d){ return parseInt((d.stats.servicedata.doublefaults/d.stats.servicedata.gamesplayed)*100);});
+		//let dataQuantile = d3.quantile(data, function(d){ return parseInt((d.stats.servicedata.doublefaults/d.stats.servicedata.gamesplayed)*100);});
+		//let dataVariance = d3.variance(data, function(d){ return parseInt((d.stats.servicedata.doublefaults/d.stats.servicedata.gamesplayed)*100);});
+		
+		//console.log("dataMin",dataMin);
+		//console.log("dataMax",dataMax);
+		//console.log("dataExtent",dataExtent);
+		//console.log("dataSum",dataSum);
+		//console.log("dataMean1",dataMean1);
+		//console.log("dataMedian",dataMedian);
+		//console.log("dataQuantile",dataQuantile);
+		//console.log("dataVariance",dataVariance);
+
+		//console.log("minScaleX",minScaleX)
+		//console.log("maxScaleX",maxScaleX)
+		//console.log(actionArr);
+		//console.log("dataMean",dataMean);
+		//console.log(yScale(dataMean));
+
+		 <!--<input type="text" value="100" class="btn" id="RecordstoDisplay" >
+            <div><button id="btnAces" class="btn DisplayCharts" data-name="servicedata:aces:gamesplayed">Aces</button></div>
+            <div><button id="btnDoubleFaults" class="btn DisplayCharts" data-name="servicedata:doublefaults:gamesplayed">Double Faults</button></div>
+            <div><button id="btnFSPercentage" class="btn DisplayCharts" data-name="servicedata:fspercent">First Serve %</button></div>
+            <div><button id="btnFSPointsWon" class="btn DisplayCharts" data-name="servicedata:fspointswon">1st Serve Points Won</button></div>
+            <div><button id="btnSSPointsWon" class="btn DisplayCharts" data-name="servicedata:sspointswon">2nd Serve Points Won</button></div>
+            
+            <div><button id="btnBPSaved" class="btn DisplayCharts" data-name="servicedata:bpsaved">Break Points Saved</button></div>
+            
+            <div><button id="btnGamesWon" class="btn DisplayCharts" data-name="servicedata:gameswon">Total Games Won</button></div>
+            <div><button id="btnTotalPointsWon" class="btn DisplayCharts" data-name="servicedata:totalpointswon">Total Points Won</button></div></div>
+          </div>
+          
+          <div class="charts--return-tools">
+            <div>Return Records</div>
+            <div><button id="btnFSReturnPointsWon" class="btn DisplayCharts" data-name="returndata:fsreturnpointswon">1st Serve Points Won</button></div>
+            <div><button id="btnSSReturnPointsWon" class="btn DisplayCharts" data-name="returndata:ssreturnpointswon">2nd Serve Points Won</button></div>
+            
+            <div><button id="btnBPConverted" class="btn DisplayCharts" data-name="returndata:bpconverted">Break Points Converted</button> </div>
+            
+            <div><button id="btnReturnGamesWon" class="btn DisplayCharts" data-name="returndata:returngameswon">Return Games Won</button></div>
+            <div><button id="btnReturnPointsWon" class="btn DisplayCharts" data-name="returndata:returnpointswon">Return Points Won</button></div>
+            <div><button id="btnTotalPointsWon" class="btn DisplayCharts" data-name="returndata:totalpointswon">Total Return Points Won</button></div>-->
+
+
+
+            function DisplayPlayerStats(data,percentage,$container, avg,belowAvg,aboveAvg, queryArr){
+
+			$container.belowAvgempty();
+			$container.append("<p><strong>" + data.name + "</strong> (" + data.age + ") <strong>  Rank: </strong>" + data.rank +   "</p>");
+			$container.append("<strong>Stats:</strong>");
+			$container.append("<br><strong>Career Aces:  </strong>" + queryArr[0]);
+			if(queryArr.length > 1){
+				$container.append("<br><strong>Games Played: </strong>" + queryArr[1]);
+				$container.append("<br><strong>Ace Percentage: </strong>" + Math.round((queryArr[0]/queryArr[1])*100) + "%");
+			}
+			else {
+				$container.append("<br><strong>Ace Percentage: </strong>" + Math.round((queryArr[0])) + "%");
+			}
+			
+			$container.append("<br><br><strong>Comments:</strong>");
+
+			if(percentage > aboveAvg){
+
+				aboveGreen = Math.round(percentage - aboveAvg);
+				aboveBlack = Math.round(percentage - avg);
+				chartsPlayerData.append("<br><strong>" + GetFirstName(data.name) + "</strong> is in the <strong>Top Group</strong> by " + aboveGreen + "%");
+				chartsPlayerData.append("<br><strong>" + GetFirstName(data.name) + "</strong> is above the <strong>Average Group</strong> by " + aboveBlack + "%");
+
+			} else if( percentage < aboveAvg && percentage > avg){
+				
+				aboveBlack = Math.round(percentage - avg);
+				belowGreen = Math.round(aboveAvg - percentage);
+				chartsPlayerData.append("<br><strong>" + GetFirstName(data.name) + "</strong> is in the <strong>Average Group</strong> by " + aboveBlack + "%");
+				chartsPlayerData.append("<br><strong>" + GetFirstName(data.name) + "</strong> is below the <strong>Top Group</strong> by " + belowGreen + "%");
+
+			} else if(percentage < avg && percentage > belowAvg){
+				belowBlack = Math.round(avg - percentage);
+				chartsPlayerData.append("<br><strong>" + GetFirstName(data.name) + "</strong> is in the <strong>Below Average Group</strong> by " + belowBlack + "%");
+				aboveRed = Math.round(currentPercentage - belowAvg);
+				chartsPlayerData.append("<br><strong>" + GetFirstName(data.name) + "</strong> is above the <strong>Lowest Average Group</strong> by " + aboveRed + "%");
+			}
+			else if(percentage < belowAvg){
+					belowRed = Math.round(belowAvg - percentage);
+					chartsPlayerData.append("<br><strong>" + GetFirstName(data.name) + "</strong> is in the <strong>Lowest Average Group</strong> by " + belowRed + "%");
+					belowBlack = Math.round(avg - percentage);
+					chartsPlayerData.append("<br><strong>" + GetFirstName(data.name) + "</strong> is below the <strong>Average Group</strong> by " + belowBlack + "%");
+			}
+
+
+			$container.append("<br><br><strong>Average(Black): </strong>" + Math.round(avg) + "%");
+			$container.append("<br><strong>Above Average(Green): </strong>" + Math.round(aboveAvg) + "%");
+			$container.append("<br><strong>Below Average(Red): </strong>" + Math.round(belowAvg) + "%");}
+
+		}

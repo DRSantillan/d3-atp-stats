@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>Akira Santillan - ATP Stat Charts</title>
+  <meta name="keywords" content="Akira Santillan, ATP, ATP Ranking">
+  <meta name="description" content="A break down of Akira Santillan's current statistics compared to other ATP ranked players with data">
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+      <div class="charts">
+        <div class="charts__chart">
+        </div>
+        <div class="charts__chart-tools">
+          <div class="charts--tools">
+            <div><strong>ATP</strong></div>
+            <div class="atp-stats-admin">
+          <button id="GetPlayers" class="btn admin">Get All Players Data</button>
+          <button id="GetPlayerStats" class="btn admin">Get Players Stats Data</button>
+        <button id="DeleteAllPlayers" class="btn admin">Delete All Players Data</button>
+        </div>
+        <div><strong>ATP #Next Gen</strong></div>
+        <div class="atp-ng-stats-admin">
+          <button id="GetNextGenPlayers" class="btn admin">Get Next Generation Players Data</button>
+        <button id="GetNextGenPlayersStats" class="btn admin">Get Next Generation Players Stats</button>
+        <button id="DeleteNextGenPlayersStats" class="btn admin">Delete Next Generation Players Stats</button>
+        </div>
+          </div>
+        </div>
+      </div>
+  
+  <!-- build:js assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+   <script src="/temp/scripts/d3.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

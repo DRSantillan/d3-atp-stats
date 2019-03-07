@@ -1,0 +1,122 @@
+.charts {
+	max-width: 100%;
+	margin: 0 auto;
+	height: 99vh;
+	
+	background-color: #fff;
+
+	display: flex;
+
+	&__chart {
+		background-color: #ff;
+		width: 75vw;
+		padding: 20px;
+		background-image: url("/assets/images/santillan-delray-beach-2017-6-things-nextgen.jpg");
+	}
+
+	&__chart-tools {
+		background-color: #006cff;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--tools {
+		flex: 1;
+		padding: 20px;
+		background-color: #006cff;
+	}
+	
+	&--player-data {
+		flex: 1;
+		padding: 15px;
+		margin: 15px;
+		background-color: #006cff;
+		border: 2px solid #fff;
+		border-radius: 4px;
+		opacity: 1;
+		font-size: 14px;
+    	
+    	&:hover {
+			background-color: #aeff00;
+			transition: fill 1s;
+			border: 2px solid #000;
+			cursor: pointer;
+		}
+  
+	}
+
+	&--hidden {
+		opacity: 0;
+   
+	}
+	&--graph-info {
+		padding: 20px;
+		background-color: #006cff;
+		font-size: 8px;
+	}
+
+	&--player-data-title{
+		font-size: 18px;
+		font-weight: bolder;
+		color: #000;
+	}
+
+	&--player-infobox{
+		
+	}
+
+	&--player-performance{
+		padding: 15px;
+		margin: 15px;
+		background-color: #006cff;
+		border: 2px solid #fff;
+		border-radius: 4px;
+		font-size: 12px;
+
+		&:hover {
+			background-color: #aeff00;
+			transition: fill 1s;
+			border: 2px solid #000;
+			cursor: pointer;
+		}
+	}
+	&--player-performance-title{
+		font-weight: bold;
+		font-size: 14px;
+	}
+	&--player-performance-box{
+		
+		display: none;
+	}
+	&--player-performance-box--view{
+		font-size: 14px;
+		display: block;
+	}
+}
+.comments {
+
+	&--green{
+		font-weight: bold;
+	color: green;
+	}
+}
+.bar {
+		fill: #006cff;
+		transition: fill 2s;
+		&:hover {
+			fill: #000000;
+			transition: fill 0.5s;
+			cursor: pointer;
+				
+		}
+	}
+	.akira {	
+		fill: #ffa200;
+		transition: fill 2s;
+		&:hover {
+			fill: #6b6b6b;
+			transition: fill 0.4s;
+			cursor: pointer;
+		}
+	}

@@ -1,0 +1,20 @@
+.btn {
+	background-color: #ccc;
+	border: 2px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin: 2px 0;
+    padding: 6px 14px;
+    width: 80%;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover {
+    	background-color: #aeff00;
+        transition: fill 0.5s;
+            border: 2px solid #000;
+            cursor: pointer;
+    }
+
+}
